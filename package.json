@@ -1,0 +1,36 @@
+{
+    "name": "cdn",
+    "version": "1.0.0",
+    "description": "Imgur proxy",
+    "main": "dist/worker.js",
+    "author": "MedzikUser",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack",
+        "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}'",
+        "lint": "eslint --fix && prettier --check '*.{json,js}' 'src/**/*.{js,ts}'"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "3.19.0",
+        "@types/service-worker-mock": "2.0.1",
+        "@typescript-eslint/eslint-plugin": "5.49.0",
+        "@typescript-eslint/parser": "5.49.0",
+        "eslint": "8.33.0",
+        "eslint-config-prettier": "8.6.0",
+        "eslint-config-typescript": "3.0.0",
+        "prettier": "2.8.3",
+        "prettier-eslint": "15.0.1",
+        "service-worker-mock": "2.0.5",
+        "ts-loader": "9.4.2",
+        "typescript": "4.9.4",
+        "webpack": "5.75.0",
+        "webpack-cli": "4.10.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "extends": [
+            "typescript",
+            "prettier"
+        ]
+    }
+}
